@@ -1,6 +1,6 @@
 # MarketPulse 2025 📊
 
-![MarketPulse Logo](logo.svg)
+![MarketPulse Logo](logo.png)
 
 ## 📊 Overview
 
@@ -299,7 +299,7 @@ Detailed implementation instructions including:
 ## 🔗 Connect & Contribute
 
 - GitHub: [@Rudraa01](https://github.com/Rudraa01)
-- Instagram: [@YourInstaHandle](https://instagram.com/YourInstaHandle)
+- Instagram: [@_rudra.aaaaa](https://instagram.com/_rudra.aaaaa)
 
 ## 📝 Project Information
 

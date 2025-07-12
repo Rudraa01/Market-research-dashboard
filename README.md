@@ -1,6 +1,6 @@
 # MarketPulse 2025 📊
 
-![MarketPulse Logo](logo.svg)
+![MarketPulse Logo](logo.png)
 
 ## 📊 Overview
 

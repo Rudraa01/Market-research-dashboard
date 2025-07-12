@@ -1,8 +1,13 @@
-# Market Research Dashboard 2025
+# MarketPulse 2025 📊
+
+![MarketPulse Logo](logo.svg)
 
 ## 📊 Overview
 
-A comprehensive market research dashboard providing in-depth analysis of industry trends, customer segments, and competitive landscape with actionable strategic recommendations for 2025.
+A modern, AI-powered market research dashboard providing real-time insights into industry trends, customer segments, and strategic opportunities. MarketPulse 2025 delivers comprehensive analysis and actionable recommendations through an intuitive, mobile-optimized interface.
+
+[![GitHub](https://img.shields.io/badge/GitHub-Rudraa01-%23181717?style=for-the-badge&logo=github)](https://github.com/Rudraa01)
+[![Mobile Responsive](https://img.shields.io/badge/Mobile-Responsive-blue?style=for-the-badge&logo=mobile)]()
 
 ## 🚀 Features
 
@@ -28,15 +33,16 @@ A comprehensive market research dashboard providing in-depth analysis of industr
 ## 📁 File Structure
 
 ```
-market-research-dashboard/
+marketpulse-2025/
 ├── index.html                    # Main dashboard interface
 ├── dashboard.css                 # Professional styling and responsive design
 ├── dashboard.js                  # Interactive visualizations and functionality
+├── logo.svg                     # MarketPulse brand logo
 ├── market_data.json             # Structured market research data
-├── strategic_analysis_report.md # Comprehensive strategic analysis
-├── implementation_guide.md      # Step-by-step implementation guide
+├── strategic_analysis_report.md  # Comprehensive strategic analysis
+├── implementation_guide.md       # Step-by-step implementation guide
 ├── todo.md                      # Project completion tracking
-└── README.md                    # This file
+└── README.md                    # Project documentation
 ```
 
 ## 🛠️ Technologies Used
@@ -45,7 +51,10 @@ market-research-dashboard/
 - **CSS3**: Modern styling with gradients, animations, and responsive design
 - **JavaScript (ES6+)**: Interactive functionality and data visualization
 - **Chart.js**: Professional charts and graphs
-- **Font Awesome**: Icons and visual elements
+- **Font Awesome 6.0**: Modern icons and visual elements
+- **SVG Animation**: Custom animated logo and visual elements
+- **Mobile-First Design**: Touch-optimized interface with responsive navigation
+- **Performance Optimization**: Lazy loading and content visibility features
 
 ## 📈 Key Insights
 
@@ -287,8 +296,22 @@ Detailed implementation instructions including:
 
 ---
 
-**Created**: July 2025  
-**Version**: 1.0  
-**Last Updated**: July 12, 2025
+## 🔗 Connect & Contribute
 
-For questions, customization requests, or technical support, please refer to the implementation guide or strategic analysis report for detailed information.
+- GitHub: [@Rudraa01](https://github.com/Rudraa01)
+- Instagram: [@YourInstaHandle](https://instagram.com/YourInstaHandle)
+
+## 📝 Project Information
+
+**Created**: July 2025  
+**Version**: 1.1  
+**Last Updated**: July 12, 2025  
+**Author**: Rudraa01
+
+<div align="center">
+
+[![Made with ❤️ by Rudraa01](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-Rudraa01-red?style=for-the-badge)](https://github.com/Rudraa01)
+
+</div>
+
+For questions, customization requests, or technical support, please refer to the implementation guide or create an issue in the GitHub repository.

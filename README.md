@@ -299,7 +299,7 @@ Detailed implementation instructions including:
 ## 🔗 Connect & Contribute
 
 - GitHub: [@Rudraa01](https://github.com/Rudraa01)
-- Instagram: [@YourInstaHandle](https://instagram.com/YourInstaHandle)
+- Instagram: [@YourInstaHandle](https://instagram.com/_rudra.aaaaa)
 
 ## 📝 Project Information
 

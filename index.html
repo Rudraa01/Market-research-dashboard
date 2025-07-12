@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPulse 2025</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li><a href="#executive-summary"><i class="fas fa-clipboard-list"></i> Executive Summary</a></li>
+            <li><a href="#industry-trends"><i class="fas fa-trending-up"></i> Industry Trends</a></li>
+            <li><a href="#customer-segments"><i class="fas fa-users"></i> Customer Segments</a></li>
+            <li><a href="#competitive-landscape"><i class="fas fa-chess"></i> Competitive Landscape</a></li>
+            <li><a href="#market-opportunities"><i class="fas fa-bullseye"></i> Market Opportunities</a></li>
+            <li><a href="#performance-benchmarks"><i class="fas fa-chart-bar"></i> Performance</a></li>
+            <li><a href="#strategic-recommendations"><i class="fas fa-lightbulb"></i> Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="brand-container">
+                <img src="logo.png" alt="MarketPulse 2025 Logo" class="logo">
+                <h1>MarketPulse 2025</h1>
+            </div>
+            <p>Real-time insights into market dynamics, trends, and strategic opportunities with AI-powered analysis</p>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="executive-summary">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h2 class="section-title">Executive Summary</h2>
+            </div>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-title">Market Outlook 2025</div>
+                    <div class="summary-content">
+                        Global markets show moderate growth with significant structural shifts. Asia Pacific leads expansion while Europe faces stagnation. AI-driven personalization and customer retention strategies dominate business priorities.
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-title">Customer Evolution</div>
+                    <div class="summary-content">
+                        72% of professionals identify as "digital-first" consumers. Environmental consciousness influences 66% of purchasing decisions. Segmentation strategies evolve beyond demographics to include behavioral and psychographic factors.
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-title">Competitive Dynamics</div>
+                    <div class="summary-content">
+                        Accelerated M&A activity in AI-driven platforms. New market entrants emerge easily in hyper-connected environment. Holistic market intelligence becomes critical for competitive advantage.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Industry Trends Section -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <div class="section-icon"><i class="fas fa-trending-up"></i></div>
+                    <h2 class="section-title">Industry Trends 2025</h2>
+                </div>
+                
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">3.3%</div>
+                        <div class="metric-label">Global Growth Rate</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$200B+</div>
+                        <div class="metric-label">Spatial Computing Market</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">72%</div>
+                        <div class="metric-label">Digital-First Consumers</div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="trendsChart"></canvas>
+                </div>
+
+                <div class="data-visualization">
+                    <h4>Key Trend Impact Assessment</h4>
+                    <div class="progress-item">
+                        <span>AI-Driven Personalization</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-90">High Impact</div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Customer Retention Focus</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-85">High Impact</div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Spatial Computing</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-75">Medium-High</div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>M&A Acceleration</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-70">Medium-High</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Segments Section -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <div class="section-icon"><i class="fas fa-users"></i></div>
+                    <h2 class="section-title">Customer Segments</h2>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="segmentChart"></canvas>
+                </div>
+
+                <ul class="segment-list">
+                    <li class="segment-item">
+                        <div class="segment-name">Digital-First Professionals</div>
+                        <div class="segment-details">72% of workforce • Technology-driven • Remote work preferences • Cross-platform behavior</div>
+                    </li>
+                    <li class="segment-item">
+                        <div class="segment-name">Environmental Conscious Consumers</div>
+                        <div class="segment-details">66% of population • Sustainability-focused • Brand values alignment • Premium willingness</div>
+                    </li>
+                    <li class="segment-item">
+                        <div class="segment-name">AI-Enhanced Users</div>
+                        <div class="segment-details">Growing segment • Personalization expectations • Data-driven decisions • Tech-savvy</div>
+                    </li>
+                    <li class="segment-item">
+                        <div class="segment-name">Retention-Focused Customers</div>
+                        <div class="segment-details">Loyalty-driven • Value-conscious • Long-term relationships • Service quality priority</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Competitive Landscape Section -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <div class="section-icon"><i class="fas fa-chess"></i></div>
+                    <h2 class="section-title">Competitive Landscape</h2>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="competitiveChart"></canvas>
+                </div>
+
+                <div class="competitor-matrix">
+                    <table class="competitor-table">
+                        <thead>
+                            <tr>
+                                <th>Analysis Framework</th>
+                                <th>Purpose</th>
+                                <th>Key Components</th>
+                                <th>Strategic Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>SWOT Analysis</strong></td>
+                                <td>Internal vs External Assessment</td>
+                                <td>Strengths, Weaknesses, Opportunities, Threats</td>
+                                <td><span class="strength-indicator strength-high"></span>Foundation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Porter's Five Forces</strong></td>
+                                <td>Industry Dynamics Analysis</td>
+                                <td>Rivalry, Entrants, Suppliers, Buyers, Substitutes</td>
+                                <td><span class="strength-indicator strength-high"></span>Market Attractiveness</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Growth-Share Matrix</strong></td>
+                                <td>Portfolio Positioning</td>
+                                <td>Stars, Question Marks, Cash Cows, Dogs</td>
+                                <td><span class="strength-indicator strength-medium"></span>Resource Allocation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Market Intelligence</strong></td>
+                                <td>Holistic Market View</td>
+                                <td>Customers, Trends, Competitors, Regulations</td>
+                                <td><span class="strength-indicator strength-high"></span>Competitive Edge</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Market Opportunities Section -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <div class="section-icon"><i class="fas fa-bullseye"></i></div>
+                    <h2 class="section-title">Market Opportunities</h2>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="opportunitiesChart"></canvas>
+                </div>
+
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">2x</div>
+                        <div class="metric-label">AI Adoption Advantage</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">40%</div>
+                        <div class="metric-label">Retention Improvement</div>
+                    </div>
+                </div>
+
+                <ul class="segment-list">
+                    <li class="segment-item">
+                        <div class="segment-name">AI-Driven Personalization</div>
+                        <div class="segment-details">Companies with AI-specific models show 2x performance advantage</div>
+                    </li>
+                    <li class="segment-item">
+                        <div class="segment-name">Spatial Computing Integration</div>
+                        <div class="segment-details">$200B+ market opportunity across healthcare, education, entertainment</div>
+                    </li>
+                    <li class="segment-item">
+                        <div class="segment-name">Environmental Positioning</div>
+                        <div class="segment-details">66% consumer influence creates differentiation opportunity</div>
+                    </li>
+                    <li class="segment-item">
+                        <div class="segment-name">Digital-First Services</div>
+                        <div class="segment-details">72% professional preference drives service innovation needs</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Performance Benchmarks Section -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <div class="section-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h2 class="section-title">Performance Benchmarks</h2>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="benchmarkChart"></canvas>
+                </div>
+
+                <div class="data-visualization">
+                    <h4>Industry Performance Indicators</h4>
+                    <div class="progress-item">
+                        <span>AI Adoption Rate (Top Performers)</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-85">85%</div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Customer Retention Improvement</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-40">40%</div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Personalization ROI Impact</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-75">75%</div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Digital Transformation Progress</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-60">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Recommendations Section -->
+            <div class="dashboard-section recommendations-section">
+                <div class="section-header">
+                    <div class="section-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h2 class="section-title">Strategic Recommendations</h2>
+                </div>
+
+                <div class="recommendation-item priority-high">
+                    <div class="recommendation-title">1. Implement AI-Driven Personalization Strategy</div>
+                    <div class="recommendation-description">
+                        Develop AI-specific operating models to achieve 2x performance advantage. Focus on GenAI-based products and services to meet evolving customer expectations for hyper-personalization.
+                    </div>
+                </div>
+
+                <div class="recommendation-item priority-high">
+                    <div class="recommendation-title">2. Shift to Customer Retention Focus</div>
+                    <div class="recommendation-description">
+                        Transition from acquisition-heavy strategies to retention-focused approaches. Implement personalized experiences to achieve 25-40% higher retention rates despite fragile brand loyalty.
+                    </div>
+                </div>
+
+                <div class="recommendation-item priority-medium">
+                    <div class="recommendation-title">3. Invest in Spatial Computing Capabilities</div>
+                    <div class="recommendation-description">
+                        Explore opportunities in the $200B+ spatial computing market. Consider applications in healthcare, education, and entertainment sectors for competitive differentiation.
+                    </div>
+                </div>
+
+                <div class="recommendation-item priority-medium">
+                    <div class="recommendation-title">4. Develop Environmental Value Proposition</div>
+                    <div class="recommendation-description">
+                        Leverage the 66% consumer influence of environmental consciousness. Integrate sustainability messaging and practices to capture environmentally conscious segments.
+                    </div>
+                </div>
+
+                <div class="recommendation-item priority-low">
+                    <div class="recommendation-title">5. Enhance Digital-First Service Delivery</div>
+                    <div class="recommendation-description">
+                        Adapt to 72% digital-first professional preferences. Redesign services and touchpoints to meet digital comfort levels and work-style preferences.
+                    </div>
+                </div>
+
+                <div class="recommendation-item priority-low">
+                    <div class="recommendation-title">6. Implement Holistic Market Intelligence</div>
+                    <div class="recommendation-description">
+                        Move beyond traditional competitive analysis to comprehensive market intelligence covering customers, trends, emerging competitors, partners, suppliers, and regulatory changes.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer with Social Links and Watermark -->
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://github.com/rudraa01" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://instagram.com/_rudra.aaaaa" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+            </div>
+            <img src="logo.svg" alt="MarketPulse 2025 Watermark" class="watermark">
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

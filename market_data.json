@@ -1,0 +1,161 @@
+{
+  "market_trends_2025": {
+    "global_growth": {
+      "projection": "Moderate growth with structural shifts",
+      "regional_leaders": [
+        "Asia Pacific"
+      ],
+      "challenges": [
+        "Europe stagnation",
+        "Trade barriers",
+        "Policy uncertainty"
+      ],
+      "growth_rate": "3.3% (contract logistics)"
+    },
+    "key_trends": [
+      {
+        "trend": "AI-Driven Personalization",
+        "description": "Companies twice as likely to adopt AI-specific operating models",
+        "impact": "High",
+        "adoption_rate": "72% of professionals identify as digital-first"
+      },
+      {
+        "trend": "Customer Retention Focus",
+        "description": "Shift from acquisition to retention strategies",
+        "impact": "High",
+        "challenge": "Brand loyalty increasingly fragile due to inflation"
+      },
+      {
+        "trend": "Spatial Computing",
+        "description": "Blending physical and digital environments",
+        "market_value": "$200+ billion in 2025",
+        "sectors": [
+          "Healthcare",
+          "Education",
+          "Entertainment"
+        ]
+      },
+      {
+        "trend": "M&A Acceleration",
+        "description": "Particularly in AI-driven e-commerce and hospitality tech",
+        "impact": "Medium-High"
+      }
+    ]
+  },
+  "customer_segments": {
+    "demographic_evolution": {
+      "digital_first_consumers": {
+        "percentage": "72%",
+        "description": "Professionals identifying as digital-first regardless of age/location",
+        "key_factors": [
+          "Work-style preferences",
+          "Digital comfort levels"
+        ]
+      },
+      "environmental_conscious": {
+        "percentage": "66%",
+        "description": "General population influenced by brand environmental stance",
+        "impact": "Crucial psychographic factor"
+      }
+    },
+    "segmentation_types": [
+      {
+        "type": "Demographic",
+        "factors": [
+          "Age",
+          "Gender",
+          "Income",
+          "Digital lifestyle",
+          "Work preferences"
+        ],
+        "evolution": "Beyond traditional factors to include digital behaviors"
+      },
+      {
+        "type": "Psychographic",
+        "factors": [
+          "Values",
+          "Beliefs",
+          "Interests",
+          "Environmental consciousness"
+        ],
+        "importance": "Gained significance in 2025"
+      },
+      {
+        "type": "Behavioral",
+        "factors": [
+          "Purchase patterns",
+          "Usage rates",
+          "Loyalty status",
+          "Cross-channel behavior"
+        ],
+        "technology": "AI-powered predictive analytics"
+      },
+      {
+        "type": "Geographic",
+        "factors": [
+          "Location",
+          "Climate",
+          "Cultural preferences",
+          "Regional characteristics"
+        ],
+        "application": "Localizing marketing efforts"
+      }
+    ]
+  },
+  "competitive_landscape": {
+    "analysis_frameworks": [
+      {
+        "framework": "SWOT Analysis",
+        "purpose": "Strength-weakness matrix against external realities",
+        "components": [
+          "Strengths",
+          "Weaknesses",
+          "Opportunities",
+          "Threats"
+        ],
+        "application": "Foundation for competitive intelligence"
+      },
+      {
+        "framework": "Porter's Five Forces",
+        "purpose": "Industry-wide competitive dynamics analysis",
+        "forces": [
+          "Competitive rivalry among existing players",
+          "Threat of new entrants",
+          "Bargaining power of suppliers",
+          "Bargaining power of customers",
+          "Threat of substitute products/services"
+        ],
+        "outcome": "Market attractiveness and profit potential insights"
+      },
+      {
+        "framework": "Growth-Share Matrix",
+        "purpose": "Categorize competitors based on market share and growth",
+        "categories": [
+          "Stars",
+          "Question Marks",
+          "Cash Cows",
+          "Dogs"
+        ]
+      }
+    ],
+    "market_dynamics": {
+      "new_entrants": "Easier than ever due to hyper-connected digital environment",
+      "competition_intensity": "Expanding pool fighting for market share",
+      "intelligence_requirement": "Holistic market intelligence beyond traditional analysis"
+    }
+  },
+  "industry_benchmarks": {
+    "ai_adoption": {
+      "top_performers": "2x more likely to have AI-specific operating models",
+      "genai_products": "Leading companies developing GenAI-based services"
+    },
+    "customer_engagement": {
+      "personalization_roi": "Companies excelling in personalization surpass revenue goals",
+      "retention_improvement": "25-40% higher retention with personalized experiences"
+    },
+    "market_intelligence": {
+      "data_overload": "Traditional tools insufficient for current data volumes",
+      "solution": "Advanced GenAI-based platforms for meaningful insights"
+    }
+  }
+}

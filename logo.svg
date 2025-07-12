@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+        </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Pulse Circle -->
+    <circle cx="100" cy="100" r="80" fill="none" stroke="url(#logoGradient)" stroke-width="4">
+        <animate attributeName="r" values="75;85;75" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Chart Line -->
+    <path d="M40,140 Q70,60 100,100 T160,60" fill="none" stroke="url(#logoGradient)" stroke-width="4" filter="url(#glow)">
+        <animate attributeName="d" 
+                 values="M40,140 Q70,60 100,100 T160,60;
+                        M40,120 Q70,80 100,90 T160,80;
+                        M40,140 Q70,60 100,100 T160,60"
+                 dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- M Letter -->
+    <path d="M60,120 L80,80 L100,120 L120,80 L140,120" 
+          fill="none" 
+          stroke="url(#logoGradient)" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          filter="url(#glow)" />
+          
+    <!-- Pulse Dot -->
+    <circle cx="160" cy="60" r="4" fill="url(#logoGradient)">
+        <animate attributeName="r" values="4;6;4" dur="1s" repeatCount="indefinite" />
+    </circle>
+</svg>

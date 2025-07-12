@@ -1,74 +1,11 @@
-// Mobile menu functionality
-function initializeMobileMenu() {
-    const mobileToggle = document.querySelector('.mobile-nav-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
-
-    if (mobileToggle && mobileNav) {
-        mobileToggle.addEventListener('click', () => {
-            const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
-            mobileToggle.setAttribute('aria-expanded', !isExpanded);
-            mobileNav.classList.toggle('active');
-            
-            // Toggle icon
-            const icon = mobileToggle.querySelector('i');
-            if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
-            }
-            
-            // Toggle body scroll
-            document.body.style.overflow = isExpanded ? '' : 'hidden';
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileNav.contains(e.target) && !mobileToggle.contains(e.target) && mobileNav.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                const icon = mobileToggle.querySelector('i');
-                if (icon) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Handle mobile link clicks
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNav.classList.remove('active');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                const icon = mobileToggle.querySelector('i');
-                if (icon) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-                document.body.style.overflow = '';
-
-                // Smooth scroll to section
-                const targetId = link.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    setTimeout(() => {
-                        targetSection.scrollIntoView({ behavior: 'smooth' });
-                    }, 300);
-                }
-            });
-        });
-    }
-}
-
 // Market Research Dashboard JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize mobile menu
-    initializeMobileMenu();
-
     // Chart.js default configuration
     Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
-    Chart.defaults.font.size = 12;
+    Chart.defaults.font.size = window.innerWidth < 768 ? 10 : 12;
     Chart.defaults.color = '#2c3e50';
+    Chart.defaults.responsive = true;
+    Chart.defaults.maintainAspectRatio = false;
 
     // Color palette
     const colors = {
@@ -399,19 +336,18 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTouchInteractions();
     optimizeChartsForMobile();
     initializeLazyLoading();
-
-    // Handle window resize
-    window.addEventListener('resize', () => {
-        optimizeChartsForMobile();
+    
+    // Handle window resize for responsive updates
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            updateChartsForMobile();
+        }, 250);
     });
-
-    // Update export button for mobile
-    const exportButton = document.querySelector('.export-btn');
-    if (exportButton) {
-        if (window.innerWidth < 768) {
-            exportButton.innerHTML = '<i class="fas fa-download"></i>';
-        }
-    }
+    
+    // Initial responsive update
+    updateChartsForMobile();
 });
 
 function addInteractiveFeatures() {

@@ -11,12 +11,15 @@
 </head>
 <body>
     <!-- Mobile Navigation Toggle -->
-    <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+    <button class="mobile-nav-toggle" 
+            aria-label="Toggle Navigation Menu" 
+            aria-expanded="false" 
+            aria-controls="mobile-nav">
         <i class="fas fa-bars"></i>
     </button>
 
     <!-- Mobile Navigation Menu -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
         <ul class="mobile-nav-links">
             <li><a href="#executive-summary"><i class="fas fa-clipboard-list"></i> Executive Summary</a></li>
             <li><a href="#industry-trends"><i class="fas fa-trending-up"></i> Industry Trends</a></li>
@@ -39,7 +42,7 @@
         </div>
 
         <!-- Executive Summary -->
-        <div class="executive-summary">
+        <div id="executive-summary" class="executive-summary">
             <div class="section-header">
                 <div class="section-icon"><i class="fas fa-clipboard-list"></i></div>
                 <h2 class="section-title">Executive Summary</h2>
@@ -69,7 +72,7 @@
         <!-- Dashboard Grid -->
         <div class="dashboard-grid">
             <!-- Industry Trends Section -->
-            <div class="dashboard-section">
+            <div id="industry-trends" class="dashboard-section">
                 <div class="section-header">
                     <div class="section-icon"><i class="fas fa-trending-up"></i></div>
                     <h2 class="section-title">Industry Trends 2025</h2>

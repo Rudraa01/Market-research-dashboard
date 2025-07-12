@@ -497,11 +497,15 @@ body {
     z-index: 999;
     padding: 80px 20px;
     transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .mobile-nav.active {
     transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .mobile-nav-links {
@@ -531,90 +535,144 @@ body {
 @media (max-width: 768px) {
     .mobile-nav-toggle {
         display: block;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
     }
 
-    .mobile-nav {
-        display: block;
+    .mobile-nav-toggle:hover {
+        background: white;
+        transform: scale(1.05);
     }
 
-    .dashboard-grid {
-        grid-template-columns: 1fr;
+    .mobile-nav-toggle i {
+        transition: transform 0.3s ease;
     }
-    
-    .header {
-        padding: 20px;
+
+    .mobile-nav-toggle[aria-expanded="true"] i {
+        transform: rotate(180deg);
+    }
+
+    .mobile-nav-links {
+        padding: 20px 0;
+    }
+
+    .mobile-nav-links a {
+        padding: 15px 20px;
+        margin: 5px 0;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .mobile-nav-links a:active {
+        transform: scale(0.98);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-nav-links i {
+        width: 24px;
+        text-align: center;
+    }
+
+    /* Improved touch targets */
+    .metric-card,
+    .segment-item,
+    .recommendation-item {
+        min-height: 60px;
+        padding: 15px;
+    }
+
+    /* Better spacing for mobile */
+    .dashboard-section {
         margin-bottom: 20px;
-    }
-
-    .header h1 {
-        font-size: 2rem;
-        letter-spacing: -0.3px;
-    }
-    
-    .header p {
-        font-size: 1rem;
-    }
-    
-    .metric-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    
-    .dashboard-container {
-        padding: 10px;
-    }
-
-    .summary-grid {
-        grid-template-columns: 1fr;
+        padding: 15px;
     }
 
     .chart-container {
-        height: 250px;
+        margin: 15px -15px;
+        padding: 0 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Improved table scrolling */
+    .competitor-matrix {
+        margin: 15px -15px;
+        padding: 0 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .competitor-table {
-        font-size: 0.9rem;
+        min-width: 600px;
     }
 
-    .competitor-table th,
-    .competitor-table td {
-        padding: 8px;
+    /* Better form factors */
+    .metric-value {
+        font-size: 1.8rem;
     }
 
-    .section-header {
-        margin-bottom: 15px;
-        padding-bottom: 10px;
+    .metric-label {
+        font-size: 0.85rem;
     }
 
     .section-title {
         font-size: 1.2rem;
     }
 
-    .section-icon {
-        font-size: 1.5rem;
+    /* Improved progress bars */
+    .progress-bar {
+        height: 24px;
     }
 
-    .segment-item {
-        padding: 12px;
+    .progress-fill {
+        font-size: 0.75rem;
     }
 
-    .recommendation-item {
+    /* Better card layout */
+    .summary-grid {
+        gap: 15px;
+    }
+
+    .summary-card {
         padding: 15px;
     }
 
-    .recommendation-title {
-        font-size: 1rem;
+    /* Enhanced touch feedback */
+    .segment-item:active,
+    .recommendation-item:active,
+    .metric-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+    .header h1 {
+        font-size: 1.5rem;
     }
 
-    .recommendation-description {
-        font-size: 0.9rem;
+    .metric-value {
+        font-size: 1.5rem;
     }
 
-    .export-btn {
-        top: 10px !important;
-        right: 70px !important;
-        padding: 8px 15px !important;
-        font-size: 0.9rem !important;
+    .dashboard-container {
+        padding: 8px;
+    }
+
+    .mobile-nav-toggle {
+        top: 10px;
+        right: 10px;
     }
 }
 

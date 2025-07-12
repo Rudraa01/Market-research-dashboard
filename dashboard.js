@@ -1,3 +1,12 @@
+/**
+ * MarketPulse 2025 Dashboard JavaScript
+ * Author: @Rudraa01 (https://github.com/Rudraa01)
+ * Created: July 2025
+ * 
+ * This file contains the interactive functionality for the MarketPulse 2025 dashboard.
+ * Copyright (c) 2025 Rudraa01. All rights reserved.
+ */
+
 // Market Research Dashboard JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     // Chart.js default configuration
@@ -348,6 +357,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial responsive update
     updateChartsForMobile();
+
+    // Add watermarks to sections
+    addSectionWatermarks();
 });
 
 function addInteractiveFeatures() {
@@ -586,3 +598,14 @@ function simulateRealTimeUpdates() {
 
 // Initialize real-time updates (commented out for static demo)
 // simulateRealTimeUpdates();
+
+// Add watermarks to sections
+function addSectionWatermarks() {
+    const sections = document.querySelectorAll('.dashboard-section');
+    sections.forEach(section => {
+        const watermark = document.createElement('div');
+        watermark.className = 'section-watermark';
+        watermark.textContent = '© github.com/Rudraa01';
+        section.appendChild(watermark);
+    });
+}
